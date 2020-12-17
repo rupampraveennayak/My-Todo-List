@@ -1,33 +1,35 @@
+
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box ;
-
+    box-sizing: border-box;
 }
 
 body{
-    background-image: linear-gradient(120deg,#f6e365,#fda085);
-    font-family:"poppins",sans-serif;
+    background-image: linear-gradient(120deg, #f6d365, #fda085);
+    color: white;
+    font-family: "Poppins", sans-serif;
     min-height: 100vh;
 }
 
-header{
+header {
     font-size: 1.5rem;
 }
 
 header,
-form{
-  min-height: 20vh;
-  display:flex ;
-  justify-content: center;
-  align-items: center;
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-form input,form button{
-    padding: 0.2rem;
-    font-size: 1rem;
+form input, 
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
     border: none;
-    background: rgb(248, 247, 247);
+    background: white;
 }
 
 form button{
@@ -35,68 +37,70 @@ form button{
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
-
 }
 
-form button:hover{
+form button:hover {
     background: #d88771;
     color: white;
-
-
 }
 
-.todo-container{
+.todo-container {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-
-
 }
 
-.todo-List{
+
+.todo-list{
     min-width: 30%;
     list-style: none;
 }
+
 .todo{
-    margin:0.5rem ;
+    margin: 0.5rem;
     background: white;
     color: black;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition:all 0.5s ease ;
-
+    transition: all 0.5s ease;
 }
-.todo l1{
+
+.todo li{
     flex: 1;
 }
+
 .trash-btn,
-.complete-btn{
+.complete-btn {
     background: #ff6f47;
     color: white;
     border: none;
     padding: 1rem;
     cursor: pointer;
-    font-size: 1rem; 
+    font-size: 1rem;
 }
-.complete -btn{
-    background: rgb(76, 216, 76);
+
+.complete-btn {
+    background: rgb(73,204,73);
 }
+
 .todo-item{
-    padding:0rem 0.5rem ;
+    padding: 0rem 0.5rem;
 }
-.fa-trash,
+
+.fa-trash, 
 .fa-check{
     pointer-events: none;
-}
+} 
+
 .completed{
     text-decoration: line-through;
     opacity: 0.5;
 }
 
 .fall{
-    transform: translateY(8rem) rotateZ(20deg);
+    transform: translateY(8rem) rotate(20deg);
     opacity: 0;
 }
 
@@ -107,29 +111,31 @@ select{
     outline: none;
     border: none;
 }
-.select{
+
+.select {
     margin: 1rem;
     position: relative;
     overflow: hidden;
 }
 
-.select{
-    color:#ff6f47 ;
+select {
+    color: #ff6f47;
     width: 10rem;
     cursor: pointer;
     padding: 1rem;
 }
-.select::after{
+
+.select::after {
     content: "\25BC";
-    position:absolute;
+    position: absolute;
     background: #ff6f47;
     top: 0;
     right: 0;
     padding: 1rem;
     pointer-events: none;
-    transition: all 0.3s ease ;
 }
-.select:hover ::after{
+
+.select:hover::after {
     background: white;
-    color: #ff6f47;
+    color: #ff6f47; 
 }
